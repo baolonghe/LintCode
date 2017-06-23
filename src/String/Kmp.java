@@ -27,31 +27,7 @@ public class Kmp {
 
 	        return -1;
 	    }
-public static int kmp1(String str,String sub)
-{
-   if (str==null||sub==null) return -1;
-   int[] next=null; 
-   next=next(sub);
-   int j=0;
-   for(int i=0;i<str.length();i++)
-   {
-	   while(j>0&&str.charAt(i)!=sub.charAt(j))
-	   {
-		   j=next[j-1];
-	   }
-	   if (sub.charAt(j)==str.charAt(i))
-	   {
-		   j++;
-	   }
-	   if (j==sub.length())
-	   {
-		   int index=i-j+1;
-		   return index;
-	   }
-   }
-   return -1;
-   
-}
+
 	    /**
 	     * 用于生成部分匹配表
 	     * @param sub
@@ -81,30 +57,6 @@ public static int kmp1(String str,String sub)
          String sub = "ABCDAB";
          int index = kmp(str, sub); 
          System.out.println("index-->"+index);
-    }`
-	 public int kmp1(String)
-	 public int[] next1(String sub){
-		 int len=sub.length();
-		 int[] next=new int[len]; 
-		 next[0]=0;
-		 int x=0;//暂存匹配数
-		 for(int i=1;i<len;i++){
-			 while(x>0&&sub.charAt(i)!=sub.charAt(x))
-			 {
-				 x=next[x-1];//从前面的匹配中查找
-			 }
-			 if(sub.charAt(i)==sub.charAt(x))
-             {
-            	   x++;
-             }
-               next[i]=x;
-             }
-		 return next;
-      }
-		 
-	 }
-	    
-	    
-
+    }
 	
 }
