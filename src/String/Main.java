@@ -8,7 +8,7 @@ public class Main {
 		String str=sc.nextLine();
 		int num=sc.nextInt();
 		char [] c=str.toCharArray();
-		Solution1.roteString(c, num);
+		RoteString.roteString(c, num);
 		for(int i=0;i<c.length;i++){
 		System.out.print(c[i]);
 		}

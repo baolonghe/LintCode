@@ -7,7 +7,7 @@ package String;
  * 有效回文串
  *
  */
-public class Solution10 {
+public class IsPalindrome {
 	public boolean isPalindrome(String s) {
         if (s == null || s.length() == 0) {
             return true;

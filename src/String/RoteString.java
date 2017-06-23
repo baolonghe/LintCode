@@ -1,6 +1,6 @@
 package String;
 
-public class Solution1 {
+public class RoteString {
   public static void roteString(char[] str,int offset)
   {
 	  if (str==null||str.length==0) return;
