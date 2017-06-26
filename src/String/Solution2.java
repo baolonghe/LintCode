@@ -1,5 +1,6 @@
 package String;
 import java.util.*;
+//AÖÐÊÇ·ñ°üº¬B×Ö·û´®
 public class Solution2 {
   public int strStr(String str1,String str2){
 	  if(str1==null||str1==null) return -1;

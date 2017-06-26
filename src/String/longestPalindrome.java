@@ -8,7 +8,7 @@ package String;
  *最长回文子串 动态规划 dp[i][j]=dp[i+1][j-1]&&str[i]=str[j] i-j>1
  *回文串的子串 也是回文串
  */
-public class Solution11 {
+public class longestPalindrome {
 	
 	public String longestPalindrome(String s){
 		if (s==null||s.length()==0) return "";

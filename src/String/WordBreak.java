@@ -1,6 +1,6 @@
 package String;
 import java.util.*;
-public class Solution9 {
+public class WordBreak {
 
     private int getMaxLength(Set<String> dict) {
         int maxLength = 0;
