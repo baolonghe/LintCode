@@ -13,7 +13,8 @@ public class N_Queen {
         if (n==0) return results;
         //用来存储前面每一行的皇后的列信息
         ArrayList<Integer> cols=new ArrayList<Integer>();
-        helper（
+        helper(n,results,cols);
+        return results;
 }
 private void helper(int n,ArrayList<ArrayList<String>> results,
 		ArrayList<Integer> cols)
