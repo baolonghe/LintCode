@@ -1,13 +1,19 @@
 package DepthSearch;
 
+class TreeNode2{
+	public int val;
+	public TreeNode2 left;
+	public TreeNode2 right;
+}
+
 public class FlatenBinarySearchTreeToList {
-public void flattenBianrySearchTreeToList(TreeNode root)
+public void flattenBianrySearchTreeToList(TreeNode2 root)
 {
 	//不能用DFS因为必须先处理最后的
 	if (root==null) return;
 	//二叉搜索树 从小到大 即是中序遍历
 	}
-private static TreeNode ConvertNode(TreeNode root,TreeNode lastNode)
+private static TreeNode2 ConvertNode(TreeNode2 root,TreeNode2 lastNode)
 {
 	 if (root== null) {  
          return null;  

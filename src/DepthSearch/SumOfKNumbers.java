@@ -22,6 +22,7 @@ public class SumOfKNumbers {
 		if (target==0&&path.size()==k)
 		{
 			res.add(new ArrayList<Integer>(path));
+			return;
 		}
 		for(int i=start;i<a.length;i++)
 		{
